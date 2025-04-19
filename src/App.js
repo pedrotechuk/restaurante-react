@@ -9,30 +9,43 @@ import Bebidas from './bebidas';
 import Porcoes from './porcoes';
 import Sobremesas from './sobremesas';
 import Cadastro from './cadastro';
+import Carrinho from './carrinho';
+import { CarrinhoProvider } from './context/CarrinhoContext';
+
+// Toastify
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <Router>
-      <div className='flex flex-col min-h-screen'>
-        <Navbar />
-        <div className="flex-grow bg-white dark:bg-gray-900">
-          <Routes>
-            <Route path="/home"element={<><Home /></>}/>
-            <Route path="/rating" element={<Rating />} />
-            <Route path="/lanches" element={<Lanches />} />
-            <Route path="/bebidas" element={<Bebidas />} />
-            <Route path="/porcoes" element={<Porcoes />} />
-            <Route path="/sobremesas" element={<Sobremesas />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-          </Routes>
+    <CarrinhoProvider>
+      <Router>
+        <div className='flex flex-col min-h-screen'>
+          <Navbar />
+          <div className="flex-grow bg-white dark:bg-gray-900">
+            <Routes>
+              <Route path="/home" element={<><Home /></>} />
+              <Route path="/rating" element={<Rating />} />
+              <Route path="/lanches" element={<Lanches />} />
+              <Route path="/bebidas" element={<Bebidas />} />
+              <Route path="/porcoes" element={<Porcoes />} />
+              <Route path="/sobremesas" element={<Sobremesas />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/carrinho" element={<Carrinho />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+        <ToastContainer 
+          position="top-center" 
+          autoClose={2000}
+          hideProgressBar={true}
+          theme="dark"
+          pauseOnHover={false}
+        />
+      </Router>
+    </CarrinhoProvider>
   );
 }
 
 export default App;
-
-;
-

@@ -40,11 +40,7 @@ export default function Bebidas() {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h1 className="flex items-center justify-center font-bold text-blue-600">BEBIDAS</h1>
+      <h1 className="flex items-center justify-center font-semibold text-lg text-blue-600">BEBIDAS</h1>
       <div className="flex flex-wrap justify-center gap-6">
         {bebidas.map((bebida) => (
           <div key={bebida.id} className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 flex items-center">

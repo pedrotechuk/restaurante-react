@@ -40,10 +40,6 @@ export default function Porcoes() {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <br />
-      <br />
-      <br />
-      <br />
       <h1 className="flex items-center justify-center font-bold text-blue-600 ">PORÇÕES</h1>
       <div className="flex flex-wrap justify-center gap-6">
         {porcoes.map((porcao) => (

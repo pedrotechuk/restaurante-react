@@ -39,10 +39,6 @@ export default function Sobremesas() {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <br />
-      <br />
-      <br />
-      <br />
       <h1 className="flex items-center justify-center font-bold text-blue-600">SOBREMESAS</h1>
       <div className="flex flex-wrap justify-center gap-6">
         {sobremesas.map((sobremesa) => (

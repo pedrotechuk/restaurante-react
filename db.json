@@ -1,7 +1,7 @@
 {
   "pedidos": [
     {
-      "id": "14d5",
+      "id": "390d",
       "itens": [
         {
           "id": 1,
@@ -13,47 +13,6 @@
           "id": 2,
           "nome": "X-Salada",
           "preco": 22.9,
-          "quantidade": 1
-        }
-      ],
-      "status": "finalizado",
-      "inicio": "2025-05-05T02:55:54.842Z",
-      "fim": "2025-05-05T02:56:01.466Z"
-    },
-    {
-      "id": "9afc",
-      "itens": [
-        {
-          "id": 1,
-          "nome": "X-Bacon",
-          "preco": 25.9,
-          "quantidade": 1
-        },
-        {
-          "id": 2,
-          "nome": "X-Salada",
-          "preco": 22.9,
-          "quantidade": 1
-        },
-        {
-          "id": 4,
-          "nome": "X-Frango",
-          "preco": 24.9,
-          "quantidade": 1
-        }
-      ],
-      "status": "finalizado",
-      "inicio": "2025-05-05T03:10:40.740Z",
-      "fim": "2025-05-05T03:10:44.395Z"
-    },
-    {
-      "id": "ac43",
-      "itens": [
-        {
-          "id": 6,
-          "nome": "Porção Alcatra Desfiada",
-          "preco": 68,
-          "imagem": "/assets/carneporc.jpg",
           "quantidade": 1
         },
         {
@@ -62,35 +21,34 @@
           "preco": 30,
           "imagem": "/assets/batatafrita.jpg",
           "quantidade": 1
+        },
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 4
         }
       ],
       "status": "finalizado",
-      "inicio": "2025-05-05T03:12:57.178Z",
-      "fim": "2025-05-05T03:13:03.315Z"
+      "inicio": "2025-05-05T03:32:15.099Z",
+      "fim": "2025-05-05T03:32:17.667Z"
     },
     {
-      "id": "cd74",
+      "id": "ff4b",
       "itens": [
-        {
-          "id": 1,
-          "nome": "X-Bacon",
-          "preco": 25.9,
-          "quantidade": 1
-        },
         {
           "id": 2,
           "nome": "X-Salada",
           "preco": 22.9,
           "quantidade": 1
-        }
-      ],
-      "status": "finalizado",
-      "inicio": "2025-05-05T03:14:29.291Z",
-      "fim": "2025-05-05T03:14:30.626Z"
-    },
-    {
-      "id": "78f6",
-      "itens": [
+        },
+        {
+          "id": 3,
+          "nome": "X-Tudo",
+          "preco": 29.9,
+          "quantidade": 1
+        },
         {
           "id": 5,
           "nome": "Porção Batata Frita",
@@ -99,16 +57,23 @@
           "quantidade": 1
         },
         {
-          "id": 7,
-          "nome": "Porção de Salada",
-          "preco": 18,
-          "imagem": "/assets/porcsalada.jpg",
+          "id": 10,
+          "nome": "Coca Cola Lata 300ml",
+          "preco": 4,
+          "imagem": "/assets/refri-1.png",
           "quantidade": 1
+        },
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 4
         }
       ],
       "status": "finalizado",
-      "inicio": "2025-05-05T03:15:06.762Z",
-      "fim": "2025-05-05T03:15:19.826Z"
+      "inicio": "2025-05-05T03:34:36.387Z",
+      "fim": "2025-05-05T03:34:50.179Z"
     }
   ]
 }

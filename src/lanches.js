@@ -38,7 +38,14 @@ export default function Lanches() {
   ];
 
   const handleAdicionarAoCarrinho = (lanche) => {
-    adicionarAoCarrinho(lanche);
+    // Modificando para adicionar os dados relevantes
+    const itemCarrinho = {
+      id: lanche.id,
+      nome: lanche.nome,
+      preco: lanche.preco,
+      quantidade: 1, // Definindo a quantidade inicial como 1
+    };
+    adicionarAoCarrinho(itemCarrinho);
     toast.success("Adicionado com sucesso!");
   };
 

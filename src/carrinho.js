@@ -1,7 +1,9 @@
 import React from "react";
 import { useCarrinho } from "./context/CarrinhoContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Carrinho() {
+  const navigate = useNavigate();
   const { carrinho, atualizarQuantidade, removerItem } = useCarrinho() || {
     carrinho: [],
     atualizarQuantidade: () => {},
@@ -13,8 +15,11 @@ export default function Carrinho() {
     0
   );
 
+  const { finalizarPedido } = useCarrinho();
+
+
   return (
-    <div className="pt-28 container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-7">
       <h1 className="text-3xl font-bold text-center mb-8">Carrinho</h1>
 
       {carrinho.length === 0 ? (
@@ -60,7 +65,10 @@ export default function Carrinho() {
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
               Total: R$ {total.toFixed(2)}
             </h2>
-            <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition">
+            <button
+              onClick={finalizarPedido}
+              className="mt-4 bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700 transition"
+            >
               Finalizar Pedido
             </button>
           </div>

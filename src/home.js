@@ -8,11 +8,11 @@ const Home = () => {
 
   useEffect(() => {
     const now = new Date();
-    const day = now.getDay(); // 0 = Domingo, 1 = Segunda, ..., 6 = Sábado
+    const day = now.getDay(); 
     const hour = now.getHours();
     const minutes = now.getMinutes();
 
-    const isDayValid = day !== 1; // Segunda-feira fechado
+    const isDayValid = day !== 1; 
     const isTimeValid = hour >= 19 && (hour < 22 || (hour === 22 && minutes === 0));
 
     setIsOpen(isDayValid && isTimeValid);

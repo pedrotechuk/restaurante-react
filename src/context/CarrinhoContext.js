@@ -40,6 +40,37 @@ export const CarrinhoProvider = ({ children }) => {
     );
   };
 
+  const finalizarPedido = async () => {
+    if (carrinho.length === 0) return;
+  
+    const novoPedido = {
+      itens: carrinho,
+      status: "pendente",
+      inicio: null,
+      fim: null
+    };
+  
+    try {
+      const response = await fetch("http://localhost:3001/pedidos", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(novoPedido)
+      });
+  
+      if (!response.ok) throw new Error("Erro ao enviar pedido");
+  
+      setCarrinho([]); // limpa o carrinho após enviar
+      console.log("Pedido enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao finalizar pedido:", error);
+    }
+  };
+
+  const limparCarrinho = () => setCarrinho([]);
+  
+
   return (
     <CarrinhoContext.Provider
       value={{
@@ -47,6 +78,8 @@ export const CarrinhoProvider = ({ children }) => {
         adicionarAoCarrinho,
         atualizarQuantidade,
         removerItem,
+        limparCarrinho,
+        finalizarPedido
       }}
     >
       {children}

@@ -10,6 +10,9 @@ import Porcoes from './porcoes';
 import Sobremesas from './sobremesas';
 import Cadastro from './cadastro';
 import Carrinho from './carrinho';
+import Acompanhamento from './Acompanhamento';
+import HistoricoPedidos from './HistoricoPedidos';
+import Pedidos from './Pedidos';
 import { CarrinhoProvider } from './context/CarrinhoContext';
 
 // Toastify
@@ -24,7 +27,11 @@ function App() {
           <Navbar />
           <div className="flex-grow bg-white dark:bg-gray-900">
             <Routes>
-              <Route path="/home" element={<><Home /></>} />
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/acompanhamento" element={<Acompanhamento />} />
+              <Route path="/pedidos" element={<Pedidos />} />
+              <Route path="/historico" element={<HistoricoPedidos />} />
               <Route path="/rating" element={<Rating />} />
               <Route path="/lanches" element={<Lanches />} />
               <Route path="/bebidas" element={<Bebidas />} />

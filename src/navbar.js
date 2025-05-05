@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <Link to="/home" className="block">
+              <Link to="/" className="block">
                 <img src={logo} className="h-16 rounded-full mb-2" alt="Bufalo Logo" />
               </Link>
             </div>

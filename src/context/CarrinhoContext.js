@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
 // Criação do contexto
 const CarrinhoContext = createContext();
@@ -15,9 +16,7 @@ export const CarrinhoProvider = ({ children }) => {
       const itemExistente = prevCarrinho.find((i) => i.id === item.id);
       if (itemExistente) {
         return prevCarrinho.map((i) =>
-          i.id === item.id
-            ? { ...i, quantidade: i.quantidade + 1 }
-            : i
+          i.id === item.id ? { ...i, quantidade: i.quantidade + 1 } : i
         );
       } else {
         return [...prevCarrinho, { ...item, quantidade: 1 }];
@@ -34,42 +33,48 @@ export const CarrinhoProvider = ({ children }) => {
     );
   };
 
+  const quantidadeTotal = carrinho.reduce(
+    (total, item) => total + item.quantidade,
+    0
+  );
+
   const removerItem = (id) => {
     setCarrinho((prevCarrinho) =>
       prevCarrinho.filter((item) => item.id !== id)
     );
   };
 
-  const finalizarPedido = async () => {
+  const finalizarPedido = async (navigate) => {
     if (carrinho.length === 0) return;
-  
+
     const novoPedido = {
       itens: carrinho,
       status: "pendente",
       inicio: null,
-      fim: null
+      fim: null,
     };
-  
+
     try {
       const response = await fetch("http://localhost:3001/pedidos", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(novoPedido)
+        body: JSON.stringify(novoPedido),
       });
-  
+
       if (!response.ok) throw new Error("Erro ao enviar pedido");
-  
-      setCarrinho([]); // limpa o carrinho após enviar
-      console.log("Pedido enviado com sucesso!");
+
+      setCarrinho([]);
+      toast.success("Pedido finalizado! Agora é só aguardar! ");
+
+      navigate("/acompanhamento");
     } catch (error) {
       console.error("Erro ao finalizar pedido:", error);
     }
   };
 
   const limparCarrinho = () => setCarrinho([]);
-  
 
   return (
     <CarrinhoContext.Provider
@@ -79,7 +84,8 @@ export const CarrinhoProvider = ({ children }) => {
         atualizarQuantidade,
         removerItem,
         limparCarrinho,
-        finalizarPedido
+        quantidadeTotal,
+        finalizarPedido,
       }}
     >
       {children}

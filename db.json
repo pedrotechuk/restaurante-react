@@ -1,7 +1,7 @@
 {
   "pedidos": [
     {
-      "id": "390d",
+      "id": "c749",
       "itens": [
         {
           "id": 1,
@@ -16,37 +16,204 @@
           "quantidade": 1
         },
         {
-          "id": 5,
-          "nome": "Porção Batata Frita",
-          "preco": 30,
-          "imagem": "/assets/batatafrita.jpg",
+          "id": 10,
+          "nome": "Coca Cola Lata 300ml",
+          "preco": 4,
+          "imagem": "/assets/refri-1.png",
           "quantidade": 1
-        },
-        {
-          "id": 9,
-          "nome": "Cerveja Spaten",
-          "preco": 7,
-          "imagem": "/assets/spaten.jpg",
-          "quantidade": 4
         }
       ],
       "status": "finalizado",
-      "inicio": "2025-05-05T03:32:15.099Z",
-      "fim": "2025-05-05T03:32:17.667Z"
+      "inicio": "2025-05-05T16:28:23.736Z",
+      "fim": "2025-05-05T16:28:24.584Z"
     },
     {
-      "id": "ff4b",
+      "id": "a45e",
       "itens": [
         {
           "id": 2,
           "nome": "X-Salada",
           "preco": 22.9,
           "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T16:27:54.168Z",
+      "fim": "2025-05-05T16:27:58.153Z"
+    },
+    {
+      "id": "972d",
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Bacon",
+          "preco": 25.9,
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T16:28:09.944Z",
+      "fim": "2025-05-05T16:34:23.199Z"
+    },
+    {
+      "id": "6f1c",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 3
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T17:06:39.721Z",
+      "fim": "2025-05-05T17:06:43.281Z"
+    },
+    {
+      "id": "7230",
+      "itens": [
+        {
+          "id": 5,
+          "nome": "Porção Batata Frita",
+          "preco": 30,
+          "imagem": "/assets/batatafrita.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T17:07:14.947Z",
+      "fim": "2025-05-05T17:07:18.225Z"
+    },
+    {
+      "id": "5abe",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T17:55:38.498Z",
+      "fim": "2025-05-05T17:55:58.610Z"
+    },
+    {
+      "id": "cc3a",
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Bacon",
+          "preco": 25.9,
+          "quantidade": 2
         },
         {
-          "id": 3,
-          "nome": "X-Tudo",
-          "preco": 29.9,
+          "id": 2,
+          "nome": "X-Salada",
+          "preco": 22.9,
+          "quantidade": 5
+        },
+        {
+          "id": 4,
+          "nome": "X-Frango",
+          "preco": 24.9,
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-05T17:20:35.999Z",
+      "fim": "2025-05-05T17:20:38.231Z"
+    },
+    {
+      "id": "3daf",
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Bacon",
+          "preco": 25.9,
+          "quantidade": 1
+        },
+        {
+          "id": 13,
+          "nome": "Bolo Chocolate",
+          "preco": 30,
+          "imagem": "/assets/bolosobremesa.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "pendente",
+      "inicio": null,
+      "fim": null
+    },
+    {
+      "id": "5535",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "pendente",
+      "inicio": null,
+      "fim": null
+    },
+    {
+      "id": "6d67",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 2
+        }
+      ],
+      "status": "pendente",
+      "inicio": null,
+      "fim": null
+    },
+    {
+      "id": "3048",
+      "itens": [
+        {
+          "id": 10,
+          "nome": "Coca Cola Lata 300ml",
+          "preco": 4,
+          "imagem": "/assets/refri-1.png",
+          "quantidade": 1
+        }
+      ],
+      "status": "pendente",
+      "inicio": null,
+      "fim": null
+    },
+    {
+      "id": "a379",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Cerveja Spaten",
+          "preco": 7,
+          "imagem": "/assets/spaten.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "pendente",
+      "inicio": null,
+      "fim": null
+    },
+    {
+      "id": "4292",
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Bacon",
+          "preco": 25.9,
           "quantidade": 1
         },
         {
@@ -57,23 +224,23 @@
           "quantidade": 1
         },
         {
-          "id": 10,
-          "nome": "Coca Cola Lata 300ml",
-          "preco": 4,
-          "imagem": "/assets/refri-1.png",
-          "quantidade": 1
-        },
-        {
           "id": 9,
           "nome": "Cerveja Spaten",
           "preco": 7,
           "imagem": "/assets/spaten.jpg",
-          "quantidade": 4
+          "quantidade": 2
+        },
+        {
+          "id": 13,
+          "nome": "Bolo Chocolate",
+          "preco": 30,
+          "imagem": "/assets/bolosobremesa.jpg",
+          "quantidade": 1
         }
       ],
       "status": "finalizado",
-      "inicio": "2025-05-05T03:34:36.387Z",
-      "fim": "2025-05-05T03:34:50.179Z"
+      "inicio": "2025-05-05T17:56:01.084Z",
+      "fim": "2025-05-05T17:56:01.834Z"
     }
   ]
 }

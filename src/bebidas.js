@@ -10,48 +10,54 @@ export default function Bebidas() {
     {
       id: 9,
       nome: "Cerveja Spaten",
-      preco: 7.00,
+      preco: 7.0,
       imagem: "/assets/spaten.jpg",
     },
     {
       id: 10,
       nome: "Coca Cola Lata 300ml",
-      preco: 4.00,
+      preco: 4.0,
       imagem: "/assets/refri-1.png",
     },
     {
-      id:11,
+      id: 11,
       nome: "Coca Cola 600ml",
-      preco: 8.00,
+      preco: 8.0,
       imagem: "/assets/coca600.jpg",
     },
     {
       id: 12,
       nome: "Guarana 2lt",
-      preco: 10.00,
+      preco: 10.0,
       imagem: "/assets/guarana2lt.jpg",
-    }
+    },
   ];
 
   const handleAdicionarAoCarrinho = (bebida) => {
-    adicionarAoCarrinho(bebida); // Adiciona a bebida ao carrinho
+    adicionarAoCarrinho(bebida);
     toast.success("Adicionado com sucesso!");
   };
 
   return (
-    <div className="container mx-auto px-4 py-10">
-      <h1 className="flex items-center justify-center font-semibold text-lg text-blue-600">BEBIDAS</h1>
+    <div className="container mx-auto px-4 py-7">
       <div className="flex flex-wrap justify-center gap-6">
         {bebidas.map((bebida) => (
-          <div key={bebida.id} className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 flex items-center">
+          <div
+            key={bebida.id}
+            className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 flex items-center"
+          >
             <img
               src={bebida.imagem}
               alt={bebida.nome}
               className="w-24 h-24 object-cover rounded-md mr-4"
             />
             <div>
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{bebida.nome}</h2>
-              <p className="text-lg font-bold text-green-600 dark:text-green-400 mt-2">R$ {bebida.preco.toFixed(2)}</p>
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+                {bebida.nome}
+              </h2>
+              <p className="text-lg font-bold text-green-600 dark:text-green-400 mt-2">
+                R$ {bebida.preco.toFixed(2)}
+              </p>
               <button
                 onClick={() => handleAdicionarAoCarrinho(bebida)}
                 className="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"

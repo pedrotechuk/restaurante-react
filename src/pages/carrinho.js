@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useCarrinho } from "./context/CarrinhoContext";
+import { useCarrinho } from "../context/CarrinhoContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Carrinho() {

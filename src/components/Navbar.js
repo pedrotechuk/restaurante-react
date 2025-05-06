@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "./assets/logo.jpg";
+import logo from "../assets/logo.jpg";
 import { NavLink, Link, useNavigate } from "react-router-dom";
-import { useCarrinho } from "./context/CarrinhoContext";
+import { useCarrinho } from "../context/CarrinhoContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

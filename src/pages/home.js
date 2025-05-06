@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo.jpg";
-import bg from "./assets/bg.png";
+import logo from "../assets/logo.jpg";
+import bg from "../assets/bg.png";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     const now = new Date();
-    const day = now.getDay(); 
+    const day = now.getDay();
     const hour = now.getHours();
     const minutes = now.getMinutes();
 
-    const isDayValid = day !== 1; 
-    const isTimeValid = hour >= 19 && (hour < 22 || (hour === 22 && minutes === 0));
+    const isDayValid = day !== 1;
+    const isTimeValid =
+      hour >= 19 && (hour < 22 || (hour === 22 && minutes === 0));
 
     setIsOpen(isDayValid && isTimeValid);
   }, []);

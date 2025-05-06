@@ -1,6 +1,6 @@
 import React from "react";
-import { useCarrinho } from "./context/CarrinhoContext"; // Importando o contexto
-import { toast } from "react-toastify"; // Importa o toast
+import { useCarrinho } from "../context/CarrinhoContext";
+import { toast } from "react-toastify";
 
 export default function Lanches() {
   const { adicionarAoCarrinho } = useCarrinho(); // Obtendo a função para adicionar ao carrinho
@@ -12,7 +12,7 @@ export default function Lanches() {
       nome: "X-Bacon",
       descricao: "Pão, hambúrguer artesanal, bacon, queijo e molho especial.",
       preco: 25.9,
-      imagem: "/assets/hamb-3.png",
+      imagem: "/assets/burgers/hamb-3.png",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Lanches() {
       descricao:
         "Pão, hambúrguer artesanal, alface, tomate, queijo e maionese.",
       preco: 22.9,
-      imagem: "/assets/hamb-4.png",
+      imagem: "/assets/burgers/hamb-4.png",
     },
     {
       id: 3,
@@ -28,14 +28,14 @@ export default function Lanches() {
       descricao:
         "Pão, hambúrguer, ovo, bacon, presunto, queijo e molho especial.",
       preco: 29.9,
-      imagem: "/assets/hamb-1.png",
+      imagem: "/assets/burgers/hamb-1.png",
     },
     {
       id: 4,
       nome: "X-Frango",
       descricao: "Pão, filé de frango, queijo, alface e molho especial.",
       preco: 24.9,
-      imagem: "/assets/hamb-2.png",
+      imagem: "/assets/burgers/hamb-2.png",
     },
   ];
 

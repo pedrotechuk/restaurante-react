@@ -1,29 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './navbar';
-import Home from './home';
-import Footer from './footer';
-import Rating from './rating';
-import Lanches from "./lanches";
-import Bebidas from './bebidas';
-import Porcoes from './porcoes';
-import Sobremesas from './sobremesas';
-import Cadastro from './cadastro';
-import Carrinho from './carrinho';
-import Acompanhamento from './Acompanhamento';
-import HistoricoPedidos from './HistoricoPedidos';
-import Pedidos from './Pedidos';
-import { CarrinhoProvider } from './context/CarrinhoContext';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/home";
+import Footer from "./components/Footer";
+import Rating from "./pages/rating";
+import Lanches from "./pages/lanches";
+import Bebidas from "./pages/bebidas";
+import Porcoes from "./pages/porcoes";
+import Sobremesas from "./pages/sobremesas";
+import Cadastro from "./pages/cadastro";
+import Carrinho from "./pages/carrinho";
+import Acompanhamento from "./pages/Acompanhamento";
+import HistoricoPedidos from "./pages/HistoricoPedidos";
+import Pedidos from "./pages/Pedidos";
+import { CarrinhoProvider } from "./context/CarrinhoContext";
 
 // Toastify
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <CarrinhoProvider>
       <Router>
-        <div className='flex flex-col min-h-screen'>
+        <div className="flex flex-col min-h-screen">
           <Navbar />
           <div className="flex-grow bg-white dark:bg-gray-900">
             <Routes>
@@ -43,8 +43,8 @@ function App() {
           </div>
           <Footer />
         </div>
-        <ToastContainer 
-          position="top-center" 
+        <ToastContainer
+          position="top-center"
           autoClose={2000}
           hideProgressBar={true}
           theme="dark"

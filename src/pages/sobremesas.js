@@ -1,65 +1,64 @@
 import React from "react";
-import { useCarrinho } from "./context/CarrinhoContext"; // Importando o contexto
+import { useCarrinho } from "../context/CarrinhoContext"; // Importando o contexto
 import { toast } from "react-toastify"; // Importa o toast
 
-export default function Bebidas() {
-  const { adicionarAoCarrinho } = useCarrinho(); // Função do contexto
+export default function Sobremesas() {
+  const { adicionarAoCarrinho } = useCarrinho(); // Hook do carrinho
 
-  // Lista de bebidas
-  const bebidas = [
+  const sobremesas = [
     {
-      id: 9,
-      nome: "Cerveja Spaten",
-      preco: 7.0,
-      imagem: "/assets/spaten.jpg",
+      id: 13,
+      nome: "Bolo Chocolate",
+      preco: 30.0,
+      imagem: "/assets/sweets/bolosobremesa.jpg",
     },
     {
-      id: 10,
-      nome: "Coca Cola Lata 300ml",
-      preco: 4.0,
-      imagem: "/assets/refri-1.png",
+      id: 14,
+      nome: "Mousse Maracujá",
+      preco: 20.0,
+      imagem: "/assets/sweets/moussemaracuja.jpg",
     },
     {
-      id: 11,
-      nome: "Coca Cola 600ml",
-      preco: 8.0,
-      imagem: "/assets/coca600.jpg",
+      id: 15,
+      nome: "Mousse de Chocolate",
+      preco: 18.0,
+      imagem: "/assets/sweets/moussechocolate.jpg",
     },
     {
-      id: 12,
-      nome: "Guarana 2lt",
-      preco: 10.0,
-      imagem: "/assets/guarana2lt.jpg",
+      id: 16,
+      nome: "Prestigio",
+      preco: 6.0,
+      imagem: "/assets/sweets/prestigio.jpg",
     },
   ];
 
-  const handleAdicionarAoCarrinho = (bebida) => {
-    adicionarAoCarrinho(bebida);
+  const handleAdicionarAoCarrinho = (sobremesa) => {
+    adicionarAoCarrinho(sobremesa);
     toast.success("Adicionado com sucesso!");
   };
 
   return (
     <div className="container mx-auto px-4 py-7">
       <div className="flex flex-wrap justify-center gap-6">
-        {bebidas.map((bebida) => (
+        {sobremesas.map((sobremesa) => (
           <div
-            key={bebida.id}
+            key={sobremesa.id}
             className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 flex items-center"
           >
             <img
-              src={bebida.imagem}
-              alt={bebida.nome}
+              src={sobremesa.imagem}
+              alt={sobremesa.nome}
               className="w-24 h-24 object-cover rounded-md mr-4"
             />
             <div>
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-                {bebida.nome}
+                {sobremesa.nome}
               </h2>
               <p className="text-lg font-bold text-green-600 dark:text-green-400 mt-2">
-                R$ {bebida.preco.toFixed(2)}
+                R$ {sobremesa.preco.toFixed(2)}
               </p>
               <button
-                onClick={() => handleAdicionarAoCarrinho(bebida)}
+                onClick={() => handleAdicionarAoCarrinho(sobremesa)}
                 className="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
               >
                 Adicionar ao Pedido

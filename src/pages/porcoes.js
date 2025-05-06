@@ -1,5 +1,5 @@
 import React from "react";
-import { useCarrinho } from "./context/CarrinhoContext"; // Importando o contexto
+import { useCarrinho } from "../context/CarrinhoContext"; // Importando o contexto
 import { toast } from "react-toastify"; // Importa o toast
 
 export default function Porcoes() {
@@ -11,25 +11,25 @@ export default function Porcoes() {
       id: 5,
       nome: "Porção Batata Frita",
       preco: 30.0,
-      imagem: "/assets/batatafrita.jpg",
+      imagem: "/assets/portions/batatafrita.jpg",
     },
     {
       id: 6,
       nome: "Porção Alcatra Desfiada",
       preco: 68.0,
-      imagem: "/assets/carneporc.jpg",
+      imagem: "/assets/portions/carneporc.jpg",
     },
     {
       id: 7,
       nome: "Porção de Salada",
       preco: 18.0,
-      imagem: "/assets/porcsalada.jpg",
+      imagem: "/assets/portions/porcsalada.jpg",
     },
     {
       id: 8,
       nome: "Porção de Camarão",
       preco: 108.0,
-      imagem: "/assets/porccamarao.jpg",
+      imagem: "/assets/portions/porccamarao.jpg",
     },
   ];
 

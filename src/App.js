@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Rating from "./pages/rating";
-import Lanches from "./pages/lanches";
-import Bebidas from "./pages/bebidas";
-import Porcoes from "./pages/porcoes";
-import Sobremesas from "./pages/sobremesas";
-import Cadastro from "./pages/cadastro";
-import Carrinho from "./pages/carrinho";
-import Acompanhamento from "./pages/Acompanhamento";
-import HistoricoPedidos from "./pages/HistoricoPedidos";
-import Pedidos from "./pages/Pedidos";
+import Rating from "./pages/Rating";
+import Lanches from "./pages/Burgers";
+import Bebidas from "./pages/Drinks";
+import Porcoes from "./pages/Portions";
+import Sobremesas from "./pages/Sweets";
+import Carrinho from "./pages/Cart";
+import Acompanhamento from "./pages/OrderStatus";
+import HistoricoPedidos from "./pages/Historic";
+import Pedidos from "./pages/Requests";
 import { CarrinhoProvider } from "./context/CarrinhoContext";
 
 // Toastify
@@ -37,7 +36,6 @@ function App() {
               <Route path="/bebidas" element={<Bebidas />} />
               <Route path="/porcoes" element={<Porcoes />} />
               <Route path="/sobremesas" element={<Sobremesas />} />
-              <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/carrinho" element={<Carrinho />} />
             </Routes>
           </div>

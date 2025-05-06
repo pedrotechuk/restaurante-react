@@ -1,11 +1,10 @@
 import React from "react";
-import { useCarrinho } from "../context/CarrinhoContext"; // Importando o contexto
-import { toast } from "react-toastify"; // Importa o toast
+import { useCarrinho } from "../context/CarrinhoContext";
+import { toast } from "react-toastify";
 
 export default function Bebidas() {
-  const { adicionarAoCarrinho } = useCarrinho(); // Função do contexto
+  const { adicionarAoCarrinho } = useCarrinho();
 
-  // Lista de bebidas
   const bebidas = [
     {
       id: 9,

@@ -1,8 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Context
+import { CarrinhoProvider } from "./context/CarrinhoContext";
+
+// Layout
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
+
+// Páginas
+import Home from "./pages/Home";
 import Rating from "./pages/Rating";
 import Lanches from "./pages/Burgers";
 import Bebidas from "./pages/Drinks";
@@ -12,7 +19,6 @@ import Carrinho from "./pages/Cart";
 import Acompanhamento from "./pages/OrderStatus";
 import HistoricoPedidos from "./pages/Historic";
 import Pedidos from "./pages/Requests";
-import { CarrinhoProvider } from "./context/CarrinhoContext";
 
 // Toastify
 import { ToastContainer } from "react-toastify";
@@ -24,7 +30,7 @@ function App() {
       <Router>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <div className="flex-grow bg-white dark:bg-gray-900">
+          <main className="flex-grow bg-white dark:bg-gray-900">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -38,13 +44,13 @@ function App() {
               <Route path="/sobremesas" element={<Sobremesas />} />
               <Route path="/carrinho" element={<Carrinho />} />
             </Routes>
-          </div>
+          </main>
           <Footer />
         </div>
         <ToastContainer
           position="top-center"
           autoClose={2000}
-          hideProgressBar={true}
+          hideProgressBar
           theme="dark"
           pauseOnHover={false}
         />

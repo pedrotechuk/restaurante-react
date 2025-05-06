@@ -25,7 +25,6 @@ export default function Carrinho() {
       return alert("Informe o valor para troco.");
     }
 
-    // Passa navigate para finalizarPedido
     finalizarPedido(navigate);
     setMostrarModal(false);
     setFormaPagamento("");
@@ -89,7 +88,6 @@ export default function Carrinho() {
         </>
       )}
 
-      {/* Modal de Pagamento */}
       {mostrarModal && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
           <div className="bg-white rounded-lg p-6 w-80">
@@ -107,7 +105,7 @@ export default function Carrinho() {
               {formaPagamento === "dinheiro" && (
                 <input
                   type="text"
-                  placeholder="Troco para quanto?"
+                  placeholder="Deseja troco para qual valor?"
                   value={trocoPara}
                   onChange={(e) => setTrocoPara(e.target.value)}
                   className="border p-2 rounded w-full"
@@ -126,7 +124,7 @@ export default function Carrinho() {
             </div>
 
             <p className="text-sm mt-3 text-gray-600">
-              Em breve teremos pagamento digital também.
+              Em breve, pagamento digital...
             </p>
 
             <div className="flex justify-end mt-4 gap-2">

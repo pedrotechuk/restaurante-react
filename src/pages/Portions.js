@@ -1,11 +1,10 @@
 import React from "react";
-import { useCarrinho } from "../context/CarrinhoContext"; // Importando o contexto
-import { toast } from "react-toastify"; // Importa o toast
+import { useCarrinho } from "../context/CarrinhoContext";
+import { toast } from "react-toastify";
 
 export default function Porcoes() {
-  const { adicionarAoCarrinho } = useCarrinho(); // Obtendo a função para adicionar ao carrinho
+  const { adicionarAoCarrinho } = useCarrinho();
 
-  // Dados das porções
   const porcoes = [
     {
       id: 5,
@@ -34,7 +33,7 @@ export default function Porcoes() {
   ];
 
   const handleAdicionarAoCarrinho = (porcao) => {
-    adicionarAoCarrinho(porcao); // Chama a função para adicionar o item ao carrinho
+    adicionarAoCarrinho(porcao);
     toast.success("Adicionado com sucesso!");
   };
 
@@ -59,7 +58,7 @@ export default function Porcoes() {
                 R$ {porcao.preco.toFixed(2)}
               </p>
               <button
-                onClick={() => handleAdicionarAoCarrinho(porcao)} // Chama a função de adicionar ao carrinho
+                onClick={() => handleAdicionarAoCarrinho(porcao)}
                 className="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
               >
                 Adicionar ao Pedido

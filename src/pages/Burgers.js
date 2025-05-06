@@ -3,16 +3,15 @@ import { useCarrinho } from "../context/CarrinhoContext";
 import { toast } from "react-toastify";
 
 export default function Lanches() {
-  const { adicionarAoCarrinho } = useCarrinho(); // Obtendo a função para adicionar ao carrinho
+  const { adicionarAoCarrinho } = useCarrinho();
 
-  // Dados dos lanches (poderia ser mapeado de um array)
   const lanches = [
     {
       id: 1,
       nome: "X-Bacon",
       descricao: "Pão, hambúrguer artesanal, bacon, queijo e molho especial.",
       preco: 25.9,
-      imagem: "/assets/burgers/hamb-3.png",
+      imagem: "/assets/burgers/x-bacon.png",
     },
     {
       id: 2,
@@ -40,12 +39,11 @@ export default function Lanches() {
   ];
 
   const handleAdicionarAoCarrinho = (lanche) => {
-    // Modificando para adicionar os dados relevantes
     const itemCarrinho = {
       id: lanche.id,
       nome: lanche.nome,
       preco: lanche.preco,
-      quantidade: 1, // Definindo a quantidade inicial como 1
+      quantidade: 1,
     };
     adicionarAoCarrinho(itemCarrinho);
     toast.success("Adicionado com sucesso!");
@@ -75,7 +73,7 @@ export default function Lanches() {
                 R$ {lanche.preco.toFixed(2)}
               </p>
               <button
-                onClick={() => handleAdicionarAoCarrinho(lanche)} // Chama a função de adicionar ao carrinho
+                onClick={() => handleAdicionarAoCarrinho(lanche)}
                 className="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
               >
                 Adicionar ao Pedido

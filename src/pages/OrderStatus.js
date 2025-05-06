@@ -22,8 +22,6 @@ const PedidosCliente = () => {
 
   useEffect(() => {
     fetchPedidos();
-
-    // Atualiza automaticamente a cada 10 segundos
     const interval = setInterval(fetchPedidos, 10000);
     return () => clearInterval(interval);
   }, []);

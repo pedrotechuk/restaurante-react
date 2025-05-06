@@ -1,9 +1,9 @@
 import React from "react";
-import { useCarrinho } from "../context/CarrinhoContext"; // Importando o contexto
-import { toast } from "react-toastify"; // Importa o toast
+import { useCarrinho } from "../context/CarrinhoContext";
+import { toast } from "react-toastify";
 
 export default function Sobremesas() {
-  const { adicionarAoCarrinho } = useCarrinho(); // Hook do carrinho
+  const { adicionarAoCarrinho } = useCarrinho();
 
   const sobremesas = [
     {

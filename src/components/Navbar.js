@@ -21,8 +21,13 @@ const Navbar = () => {
       setSenha("");
       setErro("");
       navigate("/pedidos");
+    } else if (senha === "dash") {
+      setMostrarModalSenha(false);
+      setSenha("");
+      setErro("");
+      navigate("/dashboard");
     } else {
-      setErro("Senha incorreta.");
+      setErro('Senha Inválida')
     }
   };
 
@@ -168,6 +173,28 @@ const Navbar = () => {
                       />
                     </svg>
                   </button>
+
+                   <button
+                      type="button"
+                      onClick={() => setMostrarModalSenha(true)}
+                      className="text-gray-700 bg-gray-100 hover:bg-gray-200 font-medium rounded-full text-sm ms-2 px-2 py-2 text-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="size-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 3v18h18M9 17V9M15 17v-5M21 17V7"
+                        />
+                      </svg>
+                    </button>
+
                 </div>
               </div>
 
@@ -194,7 +221,6 @@ const Navbar = () => {
         </div>
       </header>
 
-      {/* Modal de senha */}
       {mostrarModalSenha && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-80">

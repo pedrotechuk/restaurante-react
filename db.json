@@ -1,3 +1,61 @@
 {
-  "pedidos": []
+  "pedidos": [
+    {
+      "id": 1,
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Burguer",
+          "quantidade": 2
+        },
+        {
+          "id": 3,
+          "nome": "Coca-Cola",
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-12T12:00:00Z",
+      "fim": "2025-05-12T12:15:00Z"
+    },
+    {
+      "id": "2c9a",
+      "itens": [
+        {
+          "id": 1,
+          "nome": "X-Bacon",
+          "preco": 25.9,
+          "quantidade": 1
+        }
+      ],
+      "status": "pendente",
+      "inicio": "2025-05-12T01:15:10.869Z",
+      "fim": null
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "X-Burguer",
+      "preco": 20,
+      "categoria": "lanches",
+      "avaliacoes": [
+        5,
+        4,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Batata Frita",
+      "preco": 10,
+      "categoria": "porcoes",
+      "avaliacoes": [
+        4,
+        4,
+        5,
+        3
+      ]
+    }
+  ]
 }

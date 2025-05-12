@@ -19,6 +19,7 @@ import Carrinho from "./pages/Cart";
 import Acompanhamento from "./pages/OrderStatus";
 import HistoricoPedidos from "./pages/Historic";
 import Pedidos from "./pages/Requests";
+import Dashboard from "./pages/Dashboard";
 
 // Toastify
 import { ToastContainer } from "react-toastify";
@@ -43,6 +44,7 @@ function App() {
               <Route path="/porcoes" element={<Porcoes />} />
               <Route path="/sobremesas" element={<Sobremesas />} />
               <Route path="/carrinho" element={<Carrinho />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </main>
           <Footer />

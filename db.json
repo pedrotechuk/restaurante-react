@@ -1,7 +1,7 @@
 {
   "pedidos": [
     {
-      "id": 1,
+      "id": "1",
       "itens": [
         {
           "id": 1,
@@ -28,14 +28,29 @@
           "quantidade": 1
         }
       ],
-      "status": "pendente",
+      "status": "finalizado",
       "inicio": "2025-05-12T01:15:10.869Z",
-      "fim": null
+      "fim": "2025-05-12T23:18:02.043Z"
+    },
+    {
+      "id": "007b",
+      "itens": [
+        {
+          "id": 9,
+          "nome": "Porção Batata Frita",
+          "preco": 30,
+          "imagem": "/assets/portions/batatafrita.jpg",
+          "quantidade": 1
+        }
+      ],
+      "status": "finalizado",
+      "inicio": "2025-05-13T00:47:59.508Z",
+      "fim": "2025-05-13T00:48:22.887Z"
     }
   ],
   "produtos": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "X-Burguer",
       "preco": 20,
       "categoria": "lanches",
@@ -46,7 +61,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Batata Frita",
       "preco": 10,
       "categoria": "porcoes",

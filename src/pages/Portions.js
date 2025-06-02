@@ -7,28 +7,52 @@ export default function Porcoes() {
 
   const porcoes = [
     {
-      id: 5,
+      id: 9,
       nome: "Porção Batata Frita",
       preco: 30.0,
       imagem: "/assets/portions/batatafrita.jpg",
     },
     {
-      id: 6,
+      id: 10,
       nome: "Porção Alcatra Desfiada",
       preco: 68.0,
       imagem: "/assets/portions/carneporc.jpg",
     },
     {
-      id: 7,
+      id: 11,
       nome: "Porção de Salada",
       preco: 18.0,
       imagem: "/assets/portions/porcsalada.jpg",
     },
     {
-      id: 8,
+      id: 12,
       nome: "Porção de Camarão",
       preco: 108.0,
       imagem: "/assets/portions/porccamarao.jpg",
+    },
+    {
+      id: 12,
+      nome: "Porção de Calabresa",
+      preco: 39.0,
+      imagem: "/assets/portions/calabresa.jpg",
+    },
+    {
+      id: 12,
+      nome: "Porção de Torresmo ",
+      preco: 16.0,
+      imagem: "/assets/portions/torresmo.jpg",
+    },
+    {
+      id: 12,
+      nome: "Porção de Tilapia",
+      preco: 35.0,
+      imagem: "/assets/portions/porcao-tilapia.jpg",
+    },
+    {
+      id: 13,
+      nome: "Barca de Frios",
+      preco: 35.0,
+      imagem: "/assets/portions/frios.jpg",
     },
   ];
 

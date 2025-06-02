@@ -61,12 +61,12 @@ const Home = () => {
         {[
           {
             name: "Buffalo Burger",
-            img: "assets/burgers/hamb-1.png",
+            img: "assets/burgers/x-bacon.png",
             desc: "Pão Selado, Maionese da Casa, 1 Hamburguer Artesanal de Carne e Bacon, Queijo",
           },
           {
             name: "Buffalo Casual",
-            img: "assets/burgers/hamb-2.png",
+            img: "assets/burgers/x-calabresa.png",
             desc: "Pão Selado, Maionese da Casa, 1 Hamburguer Artesanal de Carne e Bacon, Queijo, Alface e Tomate",
           },
           {
@@ -76,17 +76,17 @@ const Home = () => {
           },
           {
             name: "Buffalo Egg",
-            img: "assets/burgers/hamb-4.png",
+            img: "assets/burgers/x-egg.png",
             desc: "Pão Selado, Maionese da Casa, 1 Hamburguer Artesanal de Carne e Bacon, Queijo, Alface e Tomate e Ovo Frito",
           },
           {
             name: "Buffalo Chicken",
-            img: "assets/burgers/hamb-5.png",
+            img: "assets/burgers/x-frango.png",
             desc: "Pão Selado, Maionese da Casa, 1 Hamburguer Artesanal de Carne e Bacon, Queijo, Alface, Tomate e Frango em Pedaços",
           },
           {
             name: "Buffalo Bacon BBQ",
-            img: "assets/burgers/hamb-6.png",
+            img: "assets/burgers/x-onion.png",
             desc: "Pão Selado, Maionese da Casa, 1 Hamburguer Artesanal de Carne e Bacon, Queijo, Cebola Caramelizada e Bacon",
           },
         ].map((item, index) => (

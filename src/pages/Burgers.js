@@ -19,7 +19,7 @@ export default function Lanches() {
       descricao:
         "Pão, hambúrguer artesanal, alface, tomate, queijo e maionese.",
       preco: 22.9,
-      imagem: "/assets/burgers/hamb-4.png",
+      imagem: "/assets/burgers/x-salada.png",
     },
     {
       id: 3,
@@ -27,14 +27,42 @@ export default function Lanches() {
       descricao:
         "Pão, hambúrguer, ovo, bacon, presunto, queijo e molho especial.",
       preco: 29.9,
-      imagem: "/assets/burgers/hamb-1.png",
+      imagem: "/assets/burgers/x-tudo.png",
     },
     {
       id: 4,
       nome: "X-Frango",
       descricao: "Pão, filé de frango, queijo, alface e molho especial.",
       preco: 24.9,
-      imagem: "/assets/burgers/hamb-2.png",
+      imagem: "/assets/burgers/x-frango.png",
+    },
+    {
+      id: 5,
+      nome: "X-calabresa",
+      descricao: "Pão, calabresa, queijo, alface e molho especial.",
+      preco: 19.5,
+      imagem: "/assets/burgers/x-calabresa.png",
+    },
+    {
+      id: 6,
+      nome: "X-egg",
+      descricao: "Pão, ovo, queijo, bacon, alface e molho especial.",
+      preco: 22.5,
+      imagem: "/assets/burgers/x-egg.png",
+    },
+    {
+      id: 7,
+      nome: "X-onion",
+      descricao: "Pão, calabresa, queijo, alface e molho especial.",
+      preco: 28.0,
+      imagem: "/assets/burgers/x-onion.png",
+    },
+    {
+      id: 8,
+      nome: "X-vegano",
+      descricao: "Pão, hambúguer vegetal, queijo, alface, rúcula.",
+      preco: 28.0,
+      imagem: "/assets/burgers/x-vegano.png",
     },
   ];
 

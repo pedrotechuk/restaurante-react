@@ -7,29 +7,54 @@ export default function Bebidas() {
 
   const bebidas = [
     {
-      id: 9,
+      id: 14,
       nome: "Cerveja Spaten",
       preco: 7.0,
       imagem: "/assets/drinks/spaten.jpg",
     },
     {
-      id: 10,
+      id: 15,
       nome: "Coca Cola Lata 300ml",
-      preco: 4.0,
+      preco: 5.0,
       imagem: "/assets/drinks/refri-1.png",
     },
     {
-      id: 11,
+      id: 16,
       nome: "Coca Cola 600ml",
       preco: 8.0,
       imagem: "/assets/drinks/coca600.jpg",
     },
     {
-      id: 12,
+      id: 17,
       nome: "Guarana 2lt",
       preco: 10.0,
       imagem: "/assets/drinks/guarana2lt.jpg",
     },
+    {
+      id: 18,
+      nome: "Fanta Laranja Lata 350ml",
+      preco: 5.0,
+      imagem: "/assets/drinks/fantalata350.jpg",
+    },
+    {
+      id: 19,
+      nome: "Fanta 2lt",
+      preco: 10.0,
+      imagem: "/assets/drinks/fanta2lt.jpg",
+    },
+    {
+      id: 20,
+      nome: "Fanta Lata 300ml",
+      preco: 5.0,
+      imagem: "/assets/drinks/fantalata350.jpg",
+    },
+    {
+      id: 21  ,
+      nome: "Fanta Uva 2lt",
+      preco: 10.0,
+      imagem: "/assets/drinks/fantauva2lt.jpg",
+    },
+
   ];
 
   const handleAdicionarAoCarrinho = (bebida) => {

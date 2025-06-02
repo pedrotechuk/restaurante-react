@@ -7,28 +7,40 @@ export default function Sobremesas() {
 
   const sobremesas = [
     {
-      id: 13,
+      id: 22,
       nome: "Bolo Chocolate",
-      preco: 30.0,
+      preco: 15.0,
       imagem: "/assets/sweets/bolosobremesa.jpg",
     },
     {
-      id: 14,
+      id: 23,
       nome: "Mousse Maracujá",
       preco: 20.0,
       imagem: "/assets/sweets/moussemaracuja.jpg",
     },
     {
-      id: 15,
+      id: 24,
       nome: "Mousse de Chocolate",
       preco: 18.0,
       imagem: "/assets/sweets/moussechocolate.jpg",
     },
     {
-      id: 16,
+      id: 25,
       nome: "Prestigio",
       preco: 6.0,
       imagem: "/assets/sweets/prestigio.jpg",
+    },
+    {
+      id: 26,
+      nome: "Sorvete Baunilha com Chocolate",
+      preco: 6.0,
+      imagem: "/assets/sweets/Sorvetebaunilha.jpg",
+    },
+    {
+      id: 27,
+      nome: "Sundae Chocolate com Caramelo",
+      preco: 10.0,
+      imagem: "/assets/sweets/sundaychocolate.jpg",
     },
   ];
 
